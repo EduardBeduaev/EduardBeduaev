@@ -1,0 +1,12 @@
+a = open("24.txt").readline()
+a = a.replace("C", "*")
+a = a.replace("D", "*")
+a = a.replace("F", "*")
+while "AO*" in a or "OA*" in a or "AA*" in a or "OO*" in a:
+    a = a.replace("О", "-")
+    a = a.replace("A", "-")
+    a = a.replace("--*", "1")
+    a = a.replace("-", " ")
+    a = a.replace("*", " ")
+    a = a.split()
+print(len(max(a, key=len)))

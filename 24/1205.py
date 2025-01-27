@@ -1,0 +1,6 @@
+a = open("24_1205.txt").readline()
+a = a.replace("W", " ")
+a = a.replace("G", " ")
+a = a.replace("P", " ")
+a = a.split()
+print(len(max(a, key=len)))
