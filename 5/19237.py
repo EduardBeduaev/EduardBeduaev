@@ -3,9 +3,11 @@ d = []
 def tri(n):
     s = ""
     while n > 0:
-        s = str(n % 3) + s
+        s = str((n % 3)) + str(s)
         n //= 3
     return s
+
+
 
 for n in range(1,1000):
     tr = tri(n)

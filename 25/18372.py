@@ -9,7 +9,7 @@ def f(n):
 
 for b in range(770000, 0, -1):
     h = f(b)
-    if h == []:
+    if not h:
         continue
     a = sum(h) // len(h)
     if str(a)[-2:] == "12":

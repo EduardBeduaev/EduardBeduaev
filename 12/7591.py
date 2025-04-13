@@ -7,6 +7,6 @@ for n in range(3, 400):
             s = s.replace("355", "52", 1)
         if "555" in s:
             s = s.replace("555", "23", 1)
-    summa =sum(map(int,list(s)))
+    summa = sum(map(int, list(s)))
     if summa == 27:
         print(n)

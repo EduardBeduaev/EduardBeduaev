@@ -1,6 +1,5 @@
 a = open("17522.txt")
 c = 0
-
 for i in a:
     b = [int(x) for x in i.split()]
     bs = sorted(b)

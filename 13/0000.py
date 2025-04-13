@@ -1,3 +1,11 @@
-print(bin(192)[2:], bin(168)[2:], bin(32)[2:].zfill(8),bin(160)[2:])
-print(bin(255)[2:], bin(255)[2:], bin(255)[2:],bin(240)[2:])
+print(bin(50)[2:])
+
+def tri(n):
+    s = ""
+    while n > 0:
+        s = str((n % 7)) + s
+        n //= 7
+    return s
+
+print(tri(50))
 

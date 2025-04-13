@@ -1,12 +1,10 @@
 a = open("24_19254.txt").readline()
-s = ""
-d = []
-for end in range(len(a)):
-    s += a[end]
-    if s.count("FSRQ") == 81:
-        d.append(len(s) - 1)
-        s = s[s.index("FSRQ") + 1:]
-print(max(d))
+c = 0
+for i in range(len(a)):
+    if a[i] == "Q" and a[i -3:] == "FSR":
+        c += 1
+    if c == 80:
+
 
 
 

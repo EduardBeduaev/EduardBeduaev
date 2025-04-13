@@ -1,5 +1,4 @@
-
-for n in range(210,300):
+for n in range(210, 300):
     s = "3" + "7" * n
     while "27" in s or "377" in s or "777" in s:
         if "27" in s:
